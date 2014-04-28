@@ -1,16 +1,19 @@
-<!doctype html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>{{site.name}}</title>
-  <link rel="stylesheet" href="{{ site.url }}/style.css" />
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{{site.name}}</title>
+    <link rel="stylesheet" href="{{ site.url }}/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
 
-<main class="posts">
 {{ content }}
-</main>
 
+<div class="footer">
+    <p>&copy; {{ site.time | date: '%Y' }}. Made with interest by vince.</p>
+</div>
+    
 </body>
 </html>
